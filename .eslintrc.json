@@ -1,0 +1,27 @@
+{
+    "env": {
+        "browser": true,
+        "node": true,
+        "es2020": true
+    },
+    "extends": [
+        "plugin:react/recommended",
+        "airbnb"
+    ],
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 11,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react"
+    ],
+    "rules": {
+        "no-console": "warn", // no console statement is allowed in the files
+        "no-unused-vars": "error", // if any unused variables are there it will give error
+        "eol-last": "off",  // this will allow not to have a new line after file end
+        "import/prefer-default-export": "off" // we can make named export using this like => export const name = 'ankit'
+    }
+}
