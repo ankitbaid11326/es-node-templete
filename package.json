@@ -4,8 +4,9 @@
   "description": "chat app with sockets connections",
   "main": "index.js",
   "scripts": {
+    "lint": "eslint src --color",
     "dev": "nodemon --exec babel-node src/index.js",
-    "build": "babel src -d build"
+    "build": "npm run lint && babel src -d build"
   },
   "devDependencies": {
     "@babel/cli": "^7.10.5",
